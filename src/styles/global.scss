@@ -1,0 +1,56 @@
+$dark-color: hsl(233, 26%, 24%);
+$brand-color:#31d35c;
+$brand-color2: #2bb7da;
+$accent-color: #2ec59d;
+$brand-gradient-color: linear-gradient(90deg, $brand-color 5%, $brand-color2 90%);
+$light-text-color: hsl(233, 8%, 62%);
+$section-light-color:hsl(0, 0%, 98%);
+$section-normal-color: hsl(220, 16%, 96%);
+$light-color: hsl(0, 0%, 100%);
+$font: 'Public Sans', sans-serif;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: $font;
+  overflow-x: hidden;
+  position: relative;
+}
+
+main{
+  width: 100vw;
+  position: relative;
+ overflow-x: hidden;
+}
+
+@mixin mainTitles{
+  color: $dark-color;
+  font-size: 3.6rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+@mixin button{
+  width: 40%;
+  height: 35px;
+  background: $brand-gradient-color;
+  color: $light-color;
+  border-radius: 20px;
+  border: none;
+  font-family: $font;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 80px;
+  cursor: pointer;
+  &:hover{
+    opacity: 0.7;
+    
+  }
+}

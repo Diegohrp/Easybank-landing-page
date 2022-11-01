@@ -1,0 +1,94 @@
+@use "./global.scss" as *;
+.intro{
+  width: 100%;
+  background-color: $section-light-color;
+  margin-top: 60px;
+
+  &__img{
+    width: 100%;
+    background-image: url("../assets/img/bg-intro-mobile.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    img{
+      width: 65%;
+      object-fit: cover;
+    }
+  }
+  &__details{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title{
+    @include mainTitles;
+  }
+  &__text{
+    width: 74%;
+    text-align: center;
+    font-size: 1.3rem;
+    color: $light-text-color;
+    line-height: 20px;
+    margin: 20px 0 40px 0
+  }
+  &__button{
+    @include button;
+  }
+
+}
+
+@media (min-width:700px) {
+  .intro{
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    &__img{
+      grid-column: 2 / 3;
+      background-image: url("../assets/img/bg-intro-desktop.svg");
+      width: 140%;
+      height: 400px;
+      position: relative;
+      left: 15%;
+      @media (min-width:1000px) {
+        left: 25%;
+      }
+      img{
+        position: absolute;
+        width: 50%;
+        min-width: 420px;
+        height: 550px;
+        top: -20%;
+      }
+    }
+
+    &__details{
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      width: 70%;
+      max-width: 380px;
+      align-items: flex-start;
+      
+    }
+    &__title{
+      text-align: left;
+    }
+    &__text{
+      width: 100%;
+      text-align: left;
+      font-size: 1.5rem;
+      margin: 20px 0 20px 0
+    }
+    &__button{
+      width: 130px;
+      margin-bottom: 0;
+    }
+  }
+  
+}
