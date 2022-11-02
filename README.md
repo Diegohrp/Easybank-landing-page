@@ -41,7 +41,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/easybak-landing-page-solution-using-html-sass-and-javascript-8Iaio5PzE6)
-- Live Site URL: [live site URL here](https://diegohrp.github.io/Easybank-landing-page/21)
+- Live Site URL: [live site URL here](https://diegohrp.github.io/Easybank-landing-page/)
 
 ### Run project
 
