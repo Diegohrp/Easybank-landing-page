@@ -1,0 +1,1 @@
+(()=>{"use strict";var e=document.getElementById("menu-button"),t=document.getElementById("menu-mobile"),n=!1;e.addEventListener("click",(function(){(n=!n)?(e.className="close",t.style="display:block"):(e.className="open",t.style="display:none")}))})();
