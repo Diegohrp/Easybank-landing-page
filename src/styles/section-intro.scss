@@ -26,6 +26,7 @@
   }
   &__title{
     @include mainTitles;
+    width: 80%;
   }
   &__text{
     width: 74%;
@@ -63,7 +64,8 @@
         position: absolute;
         width: 50%;
         min-width: 420px;
-        height: 550px;
+        height: 150%;
+        max-height: 550px;
         top: -20%;
       }
     }
@@ -86,8 +88,7 @@
       margin: 20px 0 20px 0
     }
     &__button{
-      width: 130px;
-      margin-bottom: 0;
+      @include mobile-button;
     }
   }
   

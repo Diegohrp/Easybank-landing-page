@@ -59,3 +59,34 @@
     }
   }
 }
+
+@media (min-width:700px) {
+  .features{
+    &__desc{
+      padding: 0 10%;
+      align-items: flex-start;
+      h2{
+        text-align: left;
+      }
+      p{
+        text-align: left;
+        width: 40%;
+      }
+    }
+    &__container{
+      padding: 0 10%;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 10px;
+    }
+    &__card{
+      width: 100%;
+      align-items: flex-start;
+      text-align: left;
+      p{
+        width: 100%;
+        font-size: 1.25rem;
+      }
+    }
+  }
+}

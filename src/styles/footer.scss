@@ -66,3 +66,37 @@ footer{
     }
   }
 }
+
+@media (min-width:700px) {
+  footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    .social-media{
+      figure{
+        margin-bottom: 30px;
+      }
+      ul{
+        width: 60%;
+      }
+    }
+    .contact{
+      ul{
+        width: 100%;
+        height: 110px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        li{
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .invite{
+      button{
+        @include mobile-button;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

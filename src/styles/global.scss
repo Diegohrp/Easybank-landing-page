@@ -54,3 +54,9 @@ main{
     
   }
 }
+
+@mixin mobile-button {
+  @include button;
+  width: 130px;
+  margin-bottom: 0;
+}

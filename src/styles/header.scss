@@ -32,6 +32,10 @@ header{
     background-image: url("../assets/icon/icon-close.svg");
   }
 
+  .menu-desktop,.button-desktop{
+    display: none;
+  }
+  
 }
 
 .menu-container{
@@ -70,4 +74,60 @@ header{
     }
     
   }
+}
+
+@media (min-width:700px) {
+ header{
+  padding: 0 20px;
+  @media (min-width:1000px) {
+    padding: 0 15%;
+  }
+  figure{
+    margin: 0;
+  }
+  .open,.close{
+    display: none;
+  }
+ 
+  .menu-desktop{
+    display: block;
+    .menu-desktop__items{
+      
+      display: flex;
+      list-style: none;
+      li {
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        a{
+          text-decoration: none;
+          font-size: 1.4rem;
+          color: $light-text-color;
+          margin:auto 15px;
+          align-self: center;
+        }
+        span{
+          width: 60%;
+          height: 4px;
+          visibility: hidden;
+          background: $brand-gradient-color;
+        }
+        &:hover > a{
+          color: $dark-color;
+        }
+        &:hover > span{
+          visibility: visible;
+        }
+      }
+    
+    }
+  }
+  .button-desktop{
+    display: block;
+    @include mobile-button;
+  }
+ }
 }
