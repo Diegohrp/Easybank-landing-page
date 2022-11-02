@@ -10,6 +10,7 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
+  - [Run project](#run-project)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -29,12 +30,23 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.JPG)
+## Mobile
+
+![](./Screenshot.JPG)
+
+## Desktop
+
+![](./Screenshot2.JPG)
 
 ### Links
 
-- Solution URL: [solution URL here]()
-- Live Site URL: [live site URL here]()
+- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/easybak-landing-page-solution-using-html-sass-and-javascript-8Iaio5PzE6)
+- Live Site URL: [live site URL here](https://diegohrp.github.io/Easybank-landing-page/21)
+
+### Run project
+
+npm install
+npm run dev
 
 ## My process
 
@@ -58,6 +70,6 @@ I also have the goal to get a job as a full stack developer.
 
 ## Author
 
-- Website - [Diego Herrera Prado]()
-- Frontend Mentor - [Diegohrp]()
+- Website - [Diego Herrera Prado](https://my-portfolio-diegohrp.vercel.app/)
+- Frontend Mentor - [Diegohrp](https://www.frontendmentor.io/profile/Diegohrp)
 - Twitter - [@diego_hpr](https://twitter.com/diego_hpr)
